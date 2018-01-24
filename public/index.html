@@ -2,22 +2,129 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Convargo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../dist/material-cards.css">
+    <style type="text/css"></style>
   </head>
   <body>
-    <div id="trucker">
-      <input class="name" type="text" placeholder="Trucker name"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
-    </div>
-    <div id="shipper">
-      <input class="name" type="text" placeholder="Shipper name"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="volume" type="number" placeholder="Volume in m3"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
+    <section class="container">
+      <div class="page-header">
+        <h1>Convargo Pricing Device<br>
+            <small>Make your delivery pricing with a simple click !</small></h1>
+      </div>
+
+      <div class="row active-with-click">
+        <div id="trucker">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <article class="material-card Red">
+                    <h2>
+                        <span>Trucker Name</span>
+                    </h2>
+                    <div class="mc-content">
+                        <div class="mc-description">
+                            <input class="name" type="text" placeholder="Trucker name"/>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <article class="material-card Red">
+                    <h2>
+                        <span>Price by km</span>
+                    </h2>
+                    <div class="mc-content">
+                        <div class="mc-description">
+                          <input class="price-by-km" type="number" placeholder="Price by km"/>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <article class="material-card Red">
+                    <h2>
+                        <span>Price by m3</span>
+                    </h2>
+                    <div class="mc-content">
+                        <div class="mc-description">
+                          <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="row active-with-click">
+          <div id="shipper">
+              <div class="col-md-3 col-sm-6 col-xs-8">
+                  <article class="material-card Red">
+                      <h2>
+                          <span>Shipper Name</span>
+                      </h2>
+                      <div class="mc-content">
+                          <div class="mc-description">
+                              <input class="name" type="text" placeholder="Shipper name"/>
+                          </div>
+                      </div>
+                  </article>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-8">
+                  <article class="material-card Red">
+                      <h2>
+                          <span>Distance in km</span>
+                      </h2>
+                      <div class="mc-content">
+                          <div class="mc-description">
+                            <input class="distance" type="number" placeholder="Distance in km"/>
+                          </div>
+                      </div>
+                  </article>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-8">
+                  <article class="material-card Red">
+                      <h2>
+                          <span>Volume in m3</span>
+                      </h2>
+                      <div class="mc-content">
+                          <div class="mc-description">
+                            <input class="volume" type="number" placeholder="Volume in m3"/>
+                          </div>
+                      </div>
+                  </article>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-8">
+                  <article class="material-card Red">
+                      <h2>
+                          <span>Deductible option</span>
+                      </h2>
+                      <div class="mc-content">
+                          <div class="mc-description">
+                            <input class="option" type="checkbox" placeholder="Deductible option"/>
+                          </div>
+                      </div>
+                  </article>
+              </div>
+          </div>
+          <button id="compute">Compute</button>
+      <div class="row active-with-click">
+          <div class="col-md-3 col-sm-6 col-xs-8">
+              <article class="material-card Red">
+                  <div class="mc-content">
+                      <div class="mc-description">
+                        <div id="actors"></div>
+                      </div>
+                  </div>
+              </article>
+          </div>
+      </div>
+    </section>
     <script src="convargo.js"></script>
     <script src="index.js"></script>
+
   </body>
 </html>
